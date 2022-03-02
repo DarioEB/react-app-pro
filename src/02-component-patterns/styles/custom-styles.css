@@ -35,3 +35,10 @@
     justify-content: center; 
     align-items:center;
 }
+
+.shopping-cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+}

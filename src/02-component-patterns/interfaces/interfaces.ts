@@ -37,3 +37,19 @@ export interface ProductCardHOCProps {
   Image: ( Props: ProductImageProps ) => JSX.Element; 
   Buttons: ( Props: ProductButtonsProps ) => JSX.Element;
 }
+
+
+/* Interface para la función onChange */
+export interface onChangeArgs {
+  product: Product;
+  count: number;
+}
+
+/* 
+  Lo defino con extensión Product para inferir 
+  que hereda los mismos attr/props 
+  pero agrega un contador
+*/
+export interface ProductInCart extends Product {
+  count: number;
+}
