@@ -9,8 +9,9 @@ export interface Product {
 
 export interface ProductContextProps {
   counter: number;
-  increaseBy: (value: number) => void;
+  maxCount?: number;
   product: Product;
+  increaseBy: (value: number) => void;
 }
 
 export interface ProductTitleProps {
@@ -52,4 +53,24 @@ export interface onChangeArgs {
 */
 export interface ProductInCart extends Product {
   count: number;
+}
+
+/* 
+ Component state initializer
+*/
+export interface InitialValues {
+  count?: number;
+  maxCount?: number;
+}
+
+/* 
+  Definimos todo lo que el componente va a exponer al usuario
+*/
+export interface ProductCardHandlers {  
+  count: number;
+  isMaxCountReached: boolean;
+  maxCount?: number;
+  product: Product;
+  increaseBy: (value: number) => void;
+  reset: () => void;
 }
