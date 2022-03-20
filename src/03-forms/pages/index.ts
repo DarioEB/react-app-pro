@@ -3,11 +3,15 @@ import FormikBasicPage from "./FormikBasicPage";
 import FormikComponents from "./FormikComponents";
 import FormikYupPage from "./FormikYupPage";
 import RegisterPage from "./RegisterPage";
+import RegisterFormikPage from "./RegisterFormikPage";
+import DynamicFormPage from "./DynamicFormPage";
 
 export {
   FormikAbstractations,
   FormikBasicPage,
   FormikComponents,
   FormikYupPage,
-  RegisterPage
+  RegisterPage,
+  RegisterFormikPage,
+  DynamicFormPage
 }

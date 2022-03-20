@@ -1,0 +1,70 @@
+[{
+        "type": "input",
+        "name": "firstname",
+        "placeholder": "Example: Dario Eliseo",
+        "label": "First Name",
+        "value": "",
+        "validations": [{
+                "type": "required"
+            },
+            {
+                "type": "minlenght",
+                "value": 5
+            },
+            {}
+        ]
+    },
+    {
+        "type": "input",
+        "name": "lastname",
+        "placeholder": "Example: Barboza",
+        "label": "Last Name",
+        "value": "",
+        "validations": [{
+                "type": "required"
+            },
+            {
+                "type": "email"
+            }
+        ]
+    },
+    {
+        "type": "input",
+        "name": "email",
+        "placeholder": "Example: darioeliseo@gmail.com",
+        "label": "E-mail",
+        "value": "",
+        "validations": [{
+                "type": "required"
+            },
+            {
+                "type": "email"
+            }
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "Favorite Game",
+        "value": "",
+        "options": [{
+                "id": 1,
+                "label": "CS GO",
+                "value": "counter-strike-global-offensive"
+            },
+            {
+                "id": 2,
+                "label": "FIFA 21",
+                "value": "fifa-21"
+            },
+            {
+                "id": 3,
+                "label": "Mortal Kombat",
+                "value": "mortal-kombat"
+            }
+        ],
+        "validations": [{
+            "type": "required"
+        }]
+    }
+]
